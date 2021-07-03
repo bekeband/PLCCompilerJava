@@ -11,6 +11,10 @@ import javax.xml.transform.stream.StreamResult;
 import java.beans.XMLDecoder;
 import java.io.File;
 
+import java.awt.*;       // Using AWT's Graphics and Color
+import java.awt.event.*; // Using AWT event classes and listener interfaces
+import javax.swing.*;    // Using Swing's components and containers
+
 public class Compiler {
 
     String SourceFileName;
@@ -69,8 +73,6 @@ public class Compiler {
             attrType.setValue("0x01");
             boolElement.setAttributeNode(attrType);
             network.appendChild(boolElement);
-
-
 
 
             // write the content into xml file
